@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { TrendingUp, Globe, Factory, Leaf, DollarSign, Users } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import economicImage from "@/assets/cityscape-night.jpg";
 
 const EconomicImpact = () => {
   const economicFactors = [

@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Wind, DollarSign, Leaf, Zap, Wrench, MapPin, TrendingDown } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import advantagesImage from "@/assets/cityscape-2.jpg";
 
 const KeyAdvantages = () => {
   const advantages = [

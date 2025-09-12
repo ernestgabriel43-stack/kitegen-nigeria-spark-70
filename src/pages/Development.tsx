@@ -3,8 +3,6 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Rocket, Target, Users, DollarSign, Calendar, Award } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import developmentImage from "@/assets/industrial-2.jpg";
 
 const Development = () => {
   const milestones = [
@@ -44,21 +42,26 @@ const Development = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <VideoBackground 
-            fallbackImage={developmentImage}
-            className="absolute inset-0"
+          <video 
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
           >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-                  Development & Investments
-                </h1>
-                <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
-                  Join the energy revolution through strategic partnerships and investment opportunities
-                </p>
-              </div>
+            <source src="http://127.0.0.1/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-06-at-2.43.18-PM.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-foreground/40"></div>
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+                Development & Investments
+              </h1>
+              <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
+                Join the energy revolution through strategic partnerships and investment opportunities
+              </p>
             </div>
-          </VideoBackground>
+          </div>
         </section>
 
         {/* Medium-term Development */}

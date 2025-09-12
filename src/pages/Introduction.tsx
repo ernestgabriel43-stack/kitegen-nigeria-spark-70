@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Wind, Zap, Leaf, DollarSign } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import introductionImage from "@/assets/industrial-1.jpg";
 
 const Introduction = () => {
   return (
@@ -12,21 +10,26 @@ const Introduction = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <VideoBackground 
-            fallbackImage={introductionImage}
-            className="absolute inset-0"
+          <video 
+            className="absolute inset-0 w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
           >
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center max-w-5xl mx-auto">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
-                  KiteGen Technology
-                </h1>
-                <p className="text-lg sm:text-xl md:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed">
-                  Revolutionary high-altitude wind energy harvesting technology that transforms how we generate renewable power
-                </p>
-              </div>
+            <source src="http://127.0.0.1/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-06-at-2.43.18-PM.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-5xl mx-auto">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
+                KiteGen Technology
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl text-white/95 max-w-4xl mx-auto leading-relaxed">
+                Revolutionary high-altitude wind energy harvesting technology that transforms how we generate renewable power
+              </p>
             </div>
-          </VideoBackground>
+          </div>
         </section>
 
         {/* Overview Section */}
