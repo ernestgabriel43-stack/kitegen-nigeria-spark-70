@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Factory, Zap, Globe, TrendingUp, Target, Rocket } from "lucide-react";
+import VideoBackground from "@/components/VideoBackground";
+import futureImage from "@/assets/cityscape-evening.jpg";
 
 const FutureScenarios = () => {
   return (

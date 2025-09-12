@@ -1,39 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Wind, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
+import VideoBackground from "@/components/VideoBackground";
 import heroImage from "@/assets/hero-kites.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video with Mobile Fallback */}
-      <div className="absolute inset-0">
-        {/* Mobile-optimized background image fallback */}
-        <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat md:hidden"
-          style={{
-            backgroundImage: `url(${heroImage})`
-          }}
-        />
-        
-        {/* Desktop video - hidden on mobile to save bandwidth */}
-        <video 
-          className="absolute inset-0 w-full h-full object-cover hidden md:block"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster={heroImage}
-        >
-          <source src="http://127.0.0.1/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-06-at-2.43.18-PM.mp4" type="video/mp4" />
-        </video>
-        
-        <div className="absolute inset-0 bg-black/50"></div>
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+    <section id="home" className="min-h-screen flex items-center justify-center overflow-hidden">
+      <VideoBackground 
+        fallbackImage={heroImage}
+        className="absolute inset-0"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Innovative Kite Technology
@@ -77,7 +55,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      </VideoBackground>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">

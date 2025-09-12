@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Battery, Network, Clock, TrendingUp, Rocket, Dna } from "lucide-react";
+import VideoBackground from "@/components/VideoBackground";
+import challengesImage from "@/assets/cityscape-2.jpg";
 
 const Challenges = () => {
   const challenges = [
@@ -46,26 +48,21 @@ const Challenges = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <video 
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
+          <VideoBackground 
+            fallbackImage={challengesImage}
+            className="absolute inset-0"
           >
-            <source src="http://127.0.0.1/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-06-at-2.43.18-PM.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-foreground/40"></div>
-          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
-                Challenges & Future Prospects
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
-                Addressing renewable energy challenges while embracing technological innovation
-              </p>
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center">
+                <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+                  Challenges & Future Prospects
+                </h1>
+                <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
+                  Addressing renewable energy challenges while embracing technological innovation
+                </p>
+              </div>
             </div>
-          </div>
+          </VideoBackground>
         </section>
 
         {/* Renewable Energy Challenges */}
