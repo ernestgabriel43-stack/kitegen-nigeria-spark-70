@@ -24,9 +24,10 @@ const CaseStudies = () => {
                 </h1>
                 <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
                   Real-world applications and industry insights
-              </p>
+                </p>
+              </div>
             </div>
-          </div>
+          </VideoBackground>
         </section>
 
         {/* Spain 2015 Case Study */}

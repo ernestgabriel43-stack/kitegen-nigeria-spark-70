@@ -23,9 +23,10 @@ const FeaturesBenefits = () => {
                 </h1>
                 <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto">
                   The science behind KiteGen and its revolutionary advantages
-              </p>
+                </p>
+              </div>
             </div>
-          </div>
+          </VideoBackground>
         </section>
 
         {/* Science Behind KiteGen */}
