@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Kitegen Energy Design System - Clean, innovative energy company theme 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    --primary: 200 95% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 65% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 95%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 45 95% 55%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 210 20% 88%;
+    --input: 210 20% 92%;
+    --ring: 200 95% 35%;
+
+    /* Energy-themed gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 95% 35%), hsl(142 65% 45%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 95% 40%) 0%, hsl(142 65% 50%) 50%, hsl(45 95% 60%) 100%);
+    --gradient-sky: linear-gradient(180deg, hsl(200 85% 95%) 0%, hsl(210 70% 85%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(200 95% 35% / 0.1);
+    --shadow-energy: 0 10px 40px -10px hsl(200 95% 35% / 0.3);
+    
+    /* Animation */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 215 25% 8%;
+    --foreground: 210 20% 95%;
+
+    --card: 215 25% 10%;
+    --card-foreground: 210 20% 95%;
+
+    --popover: 215 25% 10%;
+    --popover-foreground: 210 20% 95%;
+
+    --primary: 200 95% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 65% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 215 20% 15%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 45 95% 50%;
+    --accent-foreground: 215 25% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 20% 20%;
+    --input: 215 20% 18%;
+    --ring: 200 95% 45%;
+
+    /* Dark mode gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(200 95% 45%), hsl(142 65% 40%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 95% 50%) 0%, hsl(142 65% 45%) 50%, hsl(45 95% 55%) 100%);
+    --gradient-sky: linear-gradient(180deg, hsl(215 25% 12%) 0%, hsl(215 20% 18%) 100%);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom utility classes */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-sky {
+    background: var(--gradient-sky);
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-energy {
+    box-shadow: var(--shadow-energy);
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  /* Additional hover effects */
+  .hover\:scale-102:hover {
+    transform: scale(1.02);
+  }
+
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+}
