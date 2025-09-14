@@ -6,7 +6,7 @@ import mobileBg1 from "@/assets/mobile-bg-1.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <VideoBackground mobileImage={mobileBg1} />
 
       {/* Content */}
