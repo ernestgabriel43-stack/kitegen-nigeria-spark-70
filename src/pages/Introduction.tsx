@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Wind, Zap, Leaf, DollarSign } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import mobileBg2 from "@/assets/mobile-bg-2.jpg";
 
 const Introduction = () => {
   return (
@@ -12,7 +10,11 @@ const Introduction = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <VideoBackground mobileImage={mobileBg2} />
+          <img 
+            src="/src/assets/mobile-bg-2.jpg"
+            alt="KiteGen Technology Introduction"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">

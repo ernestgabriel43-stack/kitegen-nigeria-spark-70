@@ -3,8 +3,6 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Rocket, Target, Users, DollarSign, Calendar, Award } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import mobileBg6 from "@/assets/mobile-bg-6.jpg";
 
 const Development = () => {
   const milestones = [
@@ -44,7 +42,12 @@ const Development = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <VideoBackground mobileImage={mobileBg6} />
+          <img 
+            src="/src/assets/mobile-bg-6.jpg"
+            alt="Development & Investments"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">

@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { RotateCcw, Zap, Settings, Scale } from "lucide-react";
-import VideoBackground from "@/components/VideoBackground";
-import mobileBg3 from "@/assets/mobile-bg-3.jpg";
 
 const PowerPlant = () => {
   return (
@@ -12,7 +10,12 @@ const PowerPlant = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <VideoBackground mobileImage={mobileBg3} />
+          <img 
+            src="/src/assets/mobile-bg-3.jpg"
+            alt="KiteGen Power Plant Technology"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/50"></div>
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">

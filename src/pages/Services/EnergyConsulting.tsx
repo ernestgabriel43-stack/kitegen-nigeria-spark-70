@@ -149,15 +149,11 @@ const EnergyConsulting = () => {
       
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
-        <video 
+        <img 
+          src="/src/assets/mobile-bg-5.jpg"
+          alt="Energy Consulting"
           className="absolute inset-0 w-full h-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="http://127.0.0.1/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-06-at-2.43.18-PM.mp4" type="video/mp4" />
-        </video>
+        />
         <div className="absolute inset-0 bg-foreground/40"></div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-4xl mx-auto">
