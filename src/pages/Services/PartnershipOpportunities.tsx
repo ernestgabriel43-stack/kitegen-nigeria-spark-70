@@ -179,7 +179,7 @@ const PartnershipOpportunities = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <img 
-          src="/src/assets/mobile-bg-7.jpg"
+          src="/src/assets/energy-city-1.png"
           alt="Partnership Opportunities"
           className="absolute inset-0 w-full h-full object-cover"
         />

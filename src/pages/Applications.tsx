@@ -84,7 +84,7 @@ const Applications = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/mobile-bg-4.jpg"
+            src="/src/assets/energy-city-2.png"
             alt="KiteGen Applications"
             className="absolute inset-0 w-full h-full object-cover"
           />

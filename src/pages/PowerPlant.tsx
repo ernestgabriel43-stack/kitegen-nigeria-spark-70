@@ -11,7 +11,7 @@ const PowerPlant = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/mobile-bg-3.jpg"
+            src="/src/assets/energy-city-3.png"
             alt="KiteGen Power Plant Technology"
             className="absolute inset-0 w-full h-full object-cover"
           />

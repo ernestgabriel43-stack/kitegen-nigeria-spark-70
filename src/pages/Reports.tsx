@@ -26,7 +26,7 @@ const Reports = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/kitegen-wind-system.jpg"
+            src="/src/assets/energy-industrial-2.png"
             alt="KiteGen Reports"
             className="absolute inset-0 w-full h-full object-cover"
           />

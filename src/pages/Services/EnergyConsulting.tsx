@@ -150,7 +150,7 @@ const EnergyConsulting = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <img 
-          src="/src/assets/mobile-bg-5.jpg"
+          src="/src/assets/energy-waterfront.png"
           alt="Energy Consulting"
           className="absolute inset-0 w-full h-full object-cover"
         />

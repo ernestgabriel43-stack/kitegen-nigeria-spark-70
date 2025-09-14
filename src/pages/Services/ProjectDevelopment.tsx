@@ -146,7 +146,7 @@ const ProjectDevelopment = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <img 
-          src="/src/assets/hero-kites.jpg"
+          src="/src/assets/energy-night-2.png"
           alt="Project Development"
           className="absolute inset-0 w-full h-full object-cover"
         />

@@ -11,7 +11,7 @@ const Research = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/kitegen-hero-image.jpg"
+            src="/src/assets/energy-industrial-1.png"
             alt="KiteGen Research"
             className="absolute inset-0 w-full h-full object-cover"
           />

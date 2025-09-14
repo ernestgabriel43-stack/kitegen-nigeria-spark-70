@@ -73,7 +73,7 @@ const AirborneWindEnergy = () => {
         {/* Hero Section */}
         <section className="relative pt-20 pb-16 overflow-hidden">
           <img 
-            src="/src/assets/hero-wind-kites.jpg"
+            src="/src/assets/energy-night-1.png"
             alt="Airborne Wind Energy Systems"
             className="absolute inset-0 w-full h-full object-cover"
           />

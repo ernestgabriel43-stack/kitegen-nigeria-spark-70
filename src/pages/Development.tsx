@@ -43,7 +43,7 @@ const Development = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/mobile-bg-6.jpg"
+            src="/src/assets/energy-industrial-3.png"
             alt="Development & Investments"
             className="absolute inset-0 w-full h-full object-cover"
           />

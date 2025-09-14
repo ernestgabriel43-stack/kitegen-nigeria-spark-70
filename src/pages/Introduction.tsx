@@ -11,10 +11,11 @@ const Introduction = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/mobile-bg-2.jpg"
+            src="/src/assets/energy-city-1.png"
             alt="KiteGen Technology Introduction"
             className="absolute inset-0 w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-black/50"></div>
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-5xl mx-auto">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
