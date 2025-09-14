@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Rocket, Target, Users, DollarSign, Calendar, Award } from "lucide-react";
+import energyIndustrialImage from "@/assets/energy-industrial-3.png";
 
 const Development = () => {
   const milestones = [
@@ -43,7 +44,7 @@ const Development = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/energy-industrial-3.png"
+            src={energyIndustrialImage}
             alt="Development & Investments"
             className="absolute inset-0 w-full h-full object-cover"
           />

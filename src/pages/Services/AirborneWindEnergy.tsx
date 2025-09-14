@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Wind, Zap, Globe, Wrench, BarChart3, Shield, Leaf, Target } from "lucide-react";
 import { Link } from "react-router-dom";
+import energyNightImage from "@/assets/energy-night-1.png";
 
 const AirborneWindEnergy = () => {
   const systemTypes = [
@@ -73,7 +74,7 @@ const AirborneWindEnergy = () => {
         {/* Hero Section */}
         <section className="relative pt-20 pb-16 overflow-hidden">
           <img 
-            src="/src/assets/energy-night-1.png"
+            src={energyNightImage}
             alt="Airborne Wind Energy Systems"
             className="absolute inset-0 w-full h-full object-cover"
           />

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, TrendingUp, Leaf, DollarSign, MapPin, Users } from "lucide-react";
+import energyIndustrialImage from "@/assets/energy-industrial-2.png";
 
 const Reports = () => {
   const economicMetrics = [
@@ -26,7 +27,7 @@ const Reports = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/energy-industrial-2.png"
+            src={energyIndustrialImage}
             alt="KiteGen Reports"
             className="absolute inset-0 w-full h-full object-cover"
           />

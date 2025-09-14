@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import energyIndustrialImage from "@/assets/energy-industrial-1.png";
 import { Card } from "@/components/ui/card";
 import { Calendar, Award, Users, Lightbulb, Target, BookOpen } from "lucide-react";
 
@@ -11,7 +12,7 @@ const Research = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/energy-industrial-1.png"
+            src={energyIndustrialImage}
             alt="KiteGen Research"
             className="absolute inset-0 w-full h-full object-cover"
           />

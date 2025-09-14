@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Handshake, Globe, Zap, Building, Briefcase, Target, Users, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import energyCityImage from "@/assets/energy-city-1.png";
 
 const PartnershipOpportunities = () => {
   const partnershipTypes = [
@@ -179,7 +180,7 @@ const PartnershipOpportunities = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <img 
-          src="/src/assets/energy-city-1.png"
+          src={energyCityImage}
           alt="Partnership Opportunities"
           className="absolute inset-0 w-full h-full object-cover"
         />

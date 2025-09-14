@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Users, MapPin, Calendar, Target, Zap, FileText, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
+import energyNightImage from "@/assets/energy-night-2.png";
 
 const ProjectDevelopment = () => {
   const developmentPhases = [
@@ -146,7 +147,7 @@ const ProjectDevelopment = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <img 
-          src="/src/assets/energy-night-2.png"
+          src={energyNightImage}
           alt="Project Development"
           className="absolute inset-0 w-full h-full object-cover"
         />

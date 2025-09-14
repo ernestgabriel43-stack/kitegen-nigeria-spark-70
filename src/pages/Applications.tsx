@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import energyCityImage from "@/assets/energy-city-2.png";
 import { Card } from "@/components/ui/card";
 import { Factory, Ship, Zap, Tractor, AlertTriangle, Shield, Search, Building } from "lucide-react";
 
@@ -84,7 +85,7 @@ const Applications = () => {
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <img 
-            src="/src/assets/energy-city-2.png"
+            src={energyCityImage}
             alt="KiteGen Applications"
             className="absolute inset-0 w-full h-full object-cover"
           />

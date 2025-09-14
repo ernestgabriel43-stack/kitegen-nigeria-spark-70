@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { BarChart3, Lightbulb, Target, Users, Zap, TrendingUp, Shield, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import energyWaterfrontImage from "@/assets/energy-waterfront.png";
 
 const EnergyConsulting = () => {
   const consultingServices = [
@@ -150,7 +151,7 @@ const EnergyConsulting = () => {
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <img 
-          src="/src/assets/energy-waterfront.png"
+          src={energyWaterfrontImage}
           alt="Energy Consulting"
           className="absolute inset-0 w-full h-full object-cover"
         />
