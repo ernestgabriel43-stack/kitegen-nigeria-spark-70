@@ -158,8 +158,8 @@ const ProjectDevelopment = () => {
               Project <span className="gradient-primary bg-clip-text text-transparent">Development</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
-              From concept to commissioning, we manage every aspect of your airborne wind energy project 
-              to ensure successful delivery and optimal performance.
+              Illuminating the future of energy infrastructure, we develop cutting-edge airborne wind 
+              systems that power cities and industries with sustainable, efficient solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="energy" size="lg" asChild>
