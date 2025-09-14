@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { Factory, Zap, Globe, TrendingUp, Target, Rocket } from "lucide-react";
+import VideoBackground from "@/components/VideoBackground";
+import mobileBg1 from "@/assets/mobile-bg-1.jpg";
 
 const FutureScenarios = () => {
   return (
@@ -10,16 +12,7 @@ const FutureScenarios = () => {
       <div className="pt-20">
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
-          <video 
-            className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src="http://127.0.0.1/wp-content/uploads/2025/02/WhatsApp-Video-2025-02-06-at-2.43.18-PM.mp4" type="video/mp4" />
-          </video>
-          <div className="absolute inset-0 bg-foreground/40"></div>
+          <VideoBackground mobileImage={mobileBg1} />
           <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
