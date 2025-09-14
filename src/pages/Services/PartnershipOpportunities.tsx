@@ -190,7 +190,11 @@ const PartnershipOpportunities = () => {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               Partnership <span className="gradient-primary bg-clip-text text-transparent">Opportunities</span>
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed">
+              Illuminating the future of energy infrastructure, we develop cutting-edge airborne wind 
+              systems that power cities and industries with sustainable, efficient solutions.
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
               Join us in revolutionizing renewable energy through strategic partnerships that drive 
               innovation, expand markets, and create sustainable value for all stakeholders.
             </p>
